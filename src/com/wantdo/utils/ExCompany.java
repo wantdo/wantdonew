@@ -1,0 +1,174 @@
+package com.wantdo.utils;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class ExCompany {
+	
+	public static Map<String, String> map=new HashMap<String, String>();
+		
+	static{
+		  map.put("AAE","aae");
+		  map.put("安捷","anjie");
+		  map.put("安信达","anxinda");
+		  map.put("Aramex国际","aramex");
+		  map.put( "巴伦支","balunzhi");
+		  map.put("宝通达","baotongda");
+		  map.put("成都奔腾国际","benteng");
+		  map.put("CCES","cces");
+		  map.put("长通物流","changtong");
+		  map.put("程光","chengguang");
+		  map.put("城际","chengji");
+		  map.put("城市100","chengshi100");
+		  map.put("传喜","chuanxi");
+		  map.put("传志","chuanzhi");
+		  map.put("出口易物流","chukouyi");
+		  map.put("CityLinkExpress","citylink");
+		  map.put("东方","coe");
+		  map.put("城市之星","cszx");
+		  map.put("大田物流","datian");
+		  map.put("大洋物流快递","dayang");
+		  map.put("德邦物流","debang");
+		  map.put("德创物流","dechuang");
+		  map.put("DHL","dhl");
+		  map.put("店通","diantong");
+		  map.put("递达","dida");
+		  map.put("叮咚","dingdong");
+		  map.put("递四方速递","disifang");
+		  map.put("DPEX","dpex");
+		  map.put("D速","dsu");
+		  map.put("百福东方物流","ees");
+		  map.put("EMS","ems");
+		  map.put("凡宇","fanyu");
+		  map.put("Fardar","fardar");
+		  map.put("国际Fedex","fedex");
+		  map.put("Fedex国内","fedexcn");
+		  map.put("飞邦物流","feibang");
+		  map.put("飞豹","feibao");
+		  map.put("原飞航物流","feihang");
+		  map.put("飞狐","feihu");
+		  map.put("飞特物流","feite");
+		  map.put("飞远物流","feiyuan");
+		  map.put("丰达","fengda");
+		  map.put("飞康达","fkd");
+		  map.put("广东邮政物流","gdyz");
+		  map.put("邮政小包（国内）","gnxb");
+		  map.put("共速达物流|快递","gongsuda");
+		  map.put("国通","guotong");
+		  map.put("山东海红","haihong");
+		  map.put("海盟速递","haimeng");
+		  map.put("昊盛物流","haosheng");
+		  map.put("河北建华","hebeijianhua");
+		  map.put("恒路物流","henglu");
+		  map.put("华诚物流","huacheng");
+		  map.put("华翰物流","huahan");
+		  map.put("华企","huaqi");
+		  map.put("华夏龙物流","huaxialong");
+		  map.put("天地华宇物流","huayu");
+		  map.put("汇强","huiqiang");
+		  map.put("汇通","huitong");
+		  map.put("海外环球","hwhq");
+		  map.put("佳吉快运","jiaji");
+		  map.put("佳怡物流","jiayi");
+		  map.put("加运美","jiayunmei");
+		  map.put("金大物流","jinda");
+		  map.put("京东","jingdong");
+		  map.put("京广","jingguang");
+		  map.put("晋越","jinyue");
+		  map.put("急先达物流","jixianda");
+		  map.put("嘉里大通物流","jldt");
+		  map.put("康力物流","kangli");
+		  map.put("顺鑫(KCS)快递","kcs");
+		  map.put("快捷","kuaijie");
+		  map.put("宽容物流","kuanrong");
+		  map.put("跨越","kuayue");
+		  map.put("乐捷递","lejiedi");
+		  map.put("联昊通","lianhaotong");
+		  map.put("成都立即送","lijisong");
+		  map.put("龙邦","longbang");
+		  map.put("民邦","minbang");
+		  map.put("明亮物流","mingliang");
+		  map.put("闽盛","minsheng");
+		  map.put("尼尔","nell");
+		  map.put("港中能达","nengda");
+		  map.put("OCS","ocs");
+		  map.put("平安达","pinganda");
+		  map.put("中国邮政平邮","pingyou");
+		  map.put("品速心达","pinsu");
+		  map.put("全晨","quanchen");
+		  map.put("全峰","quanfeng");
+		  map.put("全际通","quanjitong");
+		  map.put("全日通","quanritong");
+		  map.put("全一","quanyi");
+		  map.put("RPX保时达","rpx");
+		  map.put("如风达","rufeng");
+		  map.put("赛澳递","saiaodi");
+		  map.put("三态速递","santai");
+		  map.put("伟邦(SCS)快递","scs");
+		  map.put("圣安物流","shengan");
+		  map.put("晟邦物流","shengbang");
+		  map.put("盛丰物流","shengfeng");
+		  map.put("盛辉物流","shenghui");
+		  map.put("申通","shentong");
+		  map.put("顺丰","shunfeng");
+		  map.put("速呈宅配","suchengzhaipei");
+		  map.put("穗佳物流","suijia");
+		  map.put("速尔","sure");
+		  map.put("天天","tiantian");
+		  map.put("TNT","tnt");
+		  map.put("通成物流","tongcheng");
+		  map.put("通和天下物流","tonghe");
+		  map.put("UPS","ups");
+		  map.put("USPS","usps");
+		  map.put("万博","wanbo");
+		  map.put("万家物流","wanjia");
+		  map.put("微特派","weitepai");
+		  map.put("祥龙运通","xianglong");
+		  map.put( "新邦物流","xinbang");
+		  map.put("信丰","xinfeng");
+		  map.put("星程宅配","xingchengzhaipei");
+		  map.put("希优特","xiyoute");
+		  map.put("源安达","yad");
+		  map.put("亚风","yafeng");
+		  map.put("一邦","yibang");
+		  map.put("银捷","yinjie");
+		  map.put("音素快运","yinsu");
+		  map.put("亿顺航","yishunhang");
+		  map.put("优速","yousu");
+		  map.put("北京一统飞鸿","ytfh");
+		  map.put("远成物流","yuancheng");
+		  map.put("圆通","yuantong");
+		  map.put("元智捷诚","yuanzhi");
+		  map.put("越丰","yuefeng");
+		  map.put("誉美捷","yumeijie");
+		  map.put("韵达","yunda");
+		  map.put("运通中港","yuntong");
+		  map.put("宇鑫物流","yuxin");
+		  map.put("源伟丰","ywfex");
+		  map.put("增益","zengyi");
+		  map.put("宅急送","zhaijisong");
+		  map.put("郑州建华","zhengzhoujianhua");
+		  map.put("芝麻开门","zhima");
+		  map.put("济南中天万运","zhongtian");
+		  map.put("中铁快运","zhongtie");
+		  map.put("中通","zhongtong");
+		  map.put("忠信达","zhongxinda");
+		  map.put("中邮物流","zhongyou");
+	}
+	
+	public static List<String[]> getEnByCn(List<String[]> list){
+		List<String[]> dataList=new ArrayList<String[]>();
+		for(int i=0;i<list.size();++i){
+			String[] dataArray=new String[list.get(0).length];
+			dataArray[0]=map.get(list.get(i)[0]);
+			for(int j=1;j<dataArray.length;++j){
+				dataArray[j]=list.get(i)[j];
+			}
+			dataList.add(dataArray);
+		}
+		return dataList;
+	}
+}
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<constant name="struts.multipart.saveDir"  value ="/temp"/>
+
+	<package name="default" extends="struts-default">
+		<action name="ExpressAction" class="ExpressAction">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">31457280</param>  
+			</interceptor-ref>
+			<interceptor-ref name="completeStack"></interceptor-ref>
+			<interceptor-ref name="basicStack"/>
+			<interceptor-ref name="execAndWait">
+				<param name="delaySleepInterval">500</param>
+			</interceptor-ref>
+			<result name="success">/WEB-INF/expressquery/exsendresult.jsp</result>
+			<result name="success2">/WEB-INF/expressquery/exrecresult.jsp</result>
+			<result name="wait">/WEB-INF/expressquery/wait.jsp</result>
+			<result name="error">/WEB-INF/expressquery/error.jsp</result>
+		</action>
+		<action name="ExDownloadAction" class="com.wantdo.action.ExDownloadAction">
+			<result type="stream">
+				<param name="contentType">application/vnd.ms-excel;charset=UTF-8</param>
+				<param name="inputName">downloadFile</param>
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
+	</package>
+</struts>    

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="Express" location="73,75" size="218,142">
+    <action name="ExpressAction" location="31,34" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="exresult.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="exerror.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="exresult.jsp" path="/WEB-INF/expressquery/exresult.jsp" location="408,66" size="150,55" />
+  <webResource name="exerror.jsp" path="/WEB-INF/expressquery/exerror.jsp" location="409,168" size="150,55" />
+</Struts2Diagram>
+
